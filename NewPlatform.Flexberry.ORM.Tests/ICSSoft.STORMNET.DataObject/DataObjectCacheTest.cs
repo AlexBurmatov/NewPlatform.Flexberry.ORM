@@ -59,7 +59,7 @@
             Assert.NotNull(sdo1);
             Console.WriteLine(String.Format("Getted from cache dataobject name = {0}", sdo1.Name));
 
-            //проверим что будет, если создадим объект в дочернем кэше - доступен ли он будет после его остановки?
+            // проверим что будет, если создадим объект в дочернем кэше - доступен ли он будет после его остановки?
             cache.StartCaching(false);
             cache.StartCaching(false);
             object pkey2 = PrvCreateDataObject(cache);
@@ -80,7 +80,7 @@
         }
 
         /// <summary>
-        /// Проверка работы кэша объектов данных
+        /// Проверка работы кэша объектов данных.
         /// </summary>
         [Fact]
         public void DataObjectCacheCreatingTest()
@@ -100,7 +100,6 @@
         [Fact]
         public void DataObjectLoadWithCacheTest()
         {
-
         }
 
         /// <summary>
@@ -118,15 +117,15 @@
         /// A test for ContextedLivingObjects
         /// </summary>
         [Fact]
-        //[DeploymentItem("ICSSoft.STORMNET.DataObject.dll")]
+        // [DeploymentItem("ICSSoft.STORMNET.DataObject.dll")]
         public void ContextedLivingObjectsTest()
         {
-            //DataObjectCache_Accessor target = new DataObjectCache_Accessor(); // TODO: Initialize to an appropriate value
-            //SortedList expected = null; // TODO: Initialize to an appropriate value
-            //SortedList actual;
-            //actual = target.ContextedLivingObjects();
-            //Assert.Equal(expected, actual);
-            //Assert.Inconclusive("Verify the correctness of this test method.");
+            // DataObjectCache_Accessor target = new DataObjectCache_Accessor(); // TODO: Initialize to an appropriate value
+            // SortedList expected = null; // TODO: Initialize to an appropriate value
+            // SortedList actual;
+            // actual = target.ContextedLivingObjects();
+            // Assert.Equal(expected, actual);
+            // Assert.Inconclusive("Verify the correctness of this test method.");
         }
 
         /// <summary>
@@ -184,31 +183,31 @@
         /// A test for prvGetLivingDataObject
         /// </summary>
         [Fact]
-        //[DeploymentItem("ICSSoft.STORMNET.DataObject.dll")]
+        // [DeploymentItem("ICSSoft.STORMNET.DataObject.dll")]
         public void prvGetLivingDataObjectTest()
         {
-            //DataObjectCache_Accessor target = new DataObjectCache_Accessor(); // TODO: Initialize to an appropriate value
-            //Type typeofdataobject = null; // TODO: Initialize to an appropriate value
-            //object key = null; // TODO: Initialize to an appropriate value
-            //ICSSoft.STORMNET.DataObject expected = null; // TODO: Initialize to an appropriate value
-            //ICSSoft.STORMNET.DataObject actual;
-            //actual = target.prvGetLivingDataObject(typeofdataobject, key);
-            //Assert.Equal(expected, actual);
-            //Assert.Inconclusive("Verify the correctness of this test method.");
+            // DataObjectCache_Accessor target = new DataObjectCache_Accessor(); // TODO: Initialize to an appropriate value
+            // Type typeofdataobject = null; // TODO: Initialize to an appropriate value
+            // object key = null; // TODO: Initialize to an appropriate value
+            // ICSSoft.STORMNET.DataObject expected = null; // TODO: Initialize to an appropriate value
+            // ICSSoft.STORMNET.DataObject actual;
+            // actual = target.prvGetLivingDataObject(typeofdataobject, key);
+            // Assert.Equal(expected, actual);
+            // Assert.Inconclusive("Verify the correctness of this test method.");
         }
 
         /// <summary>
         /// A test for prvRemoveLivingDataObject
         /// </summary>
         [Fact]
-        //[DeploymentItem("ICSSoft.STORMNET.DataObject.dll")]
+        // [DeploymentItem("ICSSoft.STORMNET.DataObject.dll")]
         public void prvRemoveLivingDataObjectTest()
         {
-            //DataObjectCache_Accessor target = new DataObjectCache_Accessor(); // TODO: Initialize to an appropriate value
-            //Type typeofdataobject = null; // TODO: Initialize to an appropriate value
-            //object key = null; // TODO: Initialize to an appropriate value
-            //target.prvRemoveLivingDataObject(typeofdataobject, key);
-            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            // DataObjectCache_Accessor target = new DataObjectCache_Accessor(); // TODO: Initialize to an appropriate value
+            // Type typeofdataobject = null; // TODO: Initialize to an appropriate value
+            // object key = null; // TODO: Initialize to an appropriate value
+            // target.prvRemoveLivingDataObject(typeofdataobject, key);
+            // Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
         /// <summary>
